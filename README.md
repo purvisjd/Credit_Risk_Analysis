@@ -92,4 +92,4 @@ Credit risk presents a significant problem for all portions of the financial ser
     This graphic shows that the EasyEnsembleClassifier algorithm produced a precision score of .07 and a recall score of .91 for high risk and a precision score of 1 and a recall score of .94 for low risk.
     
 ##  Summary of Results
-(Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.)
+Reviewing the above alogirithms and associated results, it can be easily seen that the relative accuracy for 
