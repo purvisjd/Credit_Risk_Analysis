@@ -25,7 +25,7 @@ Credit risk presents a significant problem for all portions of the financial ser
     
     ![ROS precision and recall scores](https://user-images.githubusercontent.com/85641017/138126334-a0efb4be-1216-431a-83b3-295a80fa1c28.png)
     
-    This graphic shows that the RandomOverSampler algorithm produced a precision score of .01 and a recall score of .67 for high risk and a precision score of 1.0 and recall score of .64 for low risk.  
+    The RandomOverSampler algorithm demonstrates a significantly low level of precision for identifying high risk individuals with a score of .01.  It does, however, demonstrate a high level of precision for low risk with a score of 1.  The sensitivity level for both high and low risk and relatively similar with scores of .67 and .64 respectively, meaning that it has a moderate level of potential for missing or misidentifying credit levels for both categories.  
 
 *  SMOTE:
     *  Balanced Accuracy Score:
@@ -38,7 +38,7 @@ Credit risk presents a significant problem for all portions of the financial ser
     
     ![SMOTE precision and recall scores](https://user-images.githubusercontent.com/85641017/138129657-adb96976-caad-4d57-b00d-df28e8bcc346.png)
 
-    This graphic shows that the SMOTE algorithm produced a precision score of .01 and a recall score of .61 for high risk and a precision score of 1.0 and recall score of .64 for low risk.
+    The SMOTE algorithm demonstrates a significantly low level of precision for identifying high risk individuals with a score of .01.  It does, however, demonstrates a high level of precision for low risk with a score of 1.  The sensitivity level for both high and low risk and relatively similar with scores of .61 and .64 respectively, meaning that it has a moderate level of potential for missing or misidentifying credit levels for both categories.
     
 *  ClusterCentroids:
     *  Balanced Accuracy Score:
@@ -51,7 +51,7 @@ Credit risk presents a significant problem for all portions of the financial ser
     
     ![Centroids precision and recall scores](https://user-images.githubusercontent.com/85641017/138130062-2abdbcfc-6f4f-4af0-b2f9-4a3f428b07ad.png)
 
-    This graphic shows that the ClusterCentroids algorithm produced a precision score of .01 and a recall score of .59 for high risk and a precision score of 1 and a recall score of .43 for low risk.
+    The ClusterCentroids algorithm demonstrates a significantly low level of precision for identifying high risk individuals with a score of .01.  It does, however, demonstrate a high level of precision for low risk with a score of 1.  The sensitivity level for high risk is moderate with a score of .59, but low for low risk with a score of .43.
     
 *  SMOTEENN
     *  Balanced Accuracy Score:
@@ -64,10 +64,9 @@ Credit risk presents a significant problem for all portions of the financial ser
     
     ![SMOTEENN precision and recall scores](https://user-images.githubusercontent.com/85641017/138130358-af023d11-f48e-4413-a427-d2f593439b49.png)
 
-    This graphic shows that the SMOTEEN algorithm produced a precision score of .01 and a recall score of .68 for high risk and a precision score of 1 and a recall score of .58 for low risk.
+    The SMOTEENN algorithm demonstrates a significantly low level of precision for identifying high risk individuals with a score of .01.  It does, however, demonstrate a high level of precision for low risk with a score of 1.  The sensitivity level for both high and low risk and relatively similar with scores of .68 and .58 respectively, meaning that it has a moderate level of potential for missing or misidentifying credit levels for both categories.
     
-   *  Conclusions for Risk Resamplers:
-   For the risk resampler algorithms, there appears to be a significant level of similarity with regards to the accuracy of the given algorithms with accuracies between .63 and .65.  The exception to this is the ClusterCentroids algorithm which shows an accuracy score of only approximately .51.  The precision scores for all 4 algorithms are virtually identical with scores of .01 for identifying high risk and 1 for identifying low risk.  This would indicate that these algorithms are all extremely strong with correctly identifying low risk, but struggle with correctly identifying high risk.  
+ 
 *  BalancedRandomForestClassifier
     *  Balanced Accuracy Score:
     
@@ -79,7 +78,7 @@ Credit risk presents a significant problem for all portions of the financial ser
     
     ![ForestClassifier precision and recall scores](https://user-images.githubusercontent.com/85641017/138130718-29f030f1-56d5-4456-99bf-5c04936a25f6.png)
 
-    This graphic shows that the BalancedRandomForestClassifier algorithm produced a precision score of approximately .04 and a recall score of .67 for high risk and a precision score of 1 and a recall score of .91 for low risk.
+    The BalancedRandomForestClassifier algorithm demonstrates a significantly low level of precision for identifying high risk individuals with a score of .04.  It does, however, demonstrate a high level of precision for low risk with a score of 1.  The sensitivity level for high credit risk is on the higher end of moderate with a score of .67.  It has an extremely high sensitivity level for identifying low risk with a score of .91.
     
 *  EasyEnsembleClassifier:
     *  Balanced Accuracy Score:
@@ -92,6 +91,6 @@ Credit risk presents a significant problem for all portions of the financial ser
     
     ![EasyEnsemble precision and recall scores](https://user-images.githubusercontent.com/85641017/138131095-381d0c1b-5012-4ef6-9859-2f7bd1a2c010.png)
 
-    This graphic shows that the EasyEnsembleClassifier algorithm produced a precision score of .07 and a recall score of .91 for high risk and a precision score of 1 and a recall score of .94 for low risk.
+    The EasyEnsembleClassifier algorithm demonstrates a significantly low level of precision for identifying high risk individuals with a score of .07.  It does, however, demonstrate a high level of precision for low risk with a score of 1.  The sensitivity level for both high and low risk are very high with scores of .94 and .91, respectively, indicating a high degree of identifying both categories.
     
 ##  Summary of Results
