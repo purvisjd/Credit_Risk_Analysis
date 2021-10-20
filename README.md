@@ -26,6 +26,7 @@ Credit risk presents a significant problem for all portions of the financial ser
     ![ROS precision and recall scores](https://user-images.githubusercontent.com/85641017/138126334-a0efb4be-1216-431a-83b3-295a80fa1c28.png)
     
     This graphic shows that the RandomOverSampler algorithm produced a precision score of .01 and a recall score of .67 for high risk and a precision score of 1.0 and recall score of .64 for low risk.  
+
 *  SMOTE:
     *  Balanced Accuracy Score:
     
@@ -65,6 +66,8 @@ Credit risk presents a significant problem for all portions of the financial ser
 
     This graphic shows that the SMOTEEN algorithm produced a precision score of .01 and a recall score of .68 for high risk and a precision score of 1 and a recall score of .58 for low risk.
     
+   *  Conclusions for Risk Resamplers:
+   For the risk resampler algorithms, there appears to be a significant level of similarity with regards to the accuracy of the given algorithms with accuracies between .63 and .65.  The exception to this is the ClusterCentroids algorithm which shows an accuracy score of only approximately .51.  The precision scores for all 4 algorithms are virtually identical with scores of .01 for identifying high risk and 1 for identifying low risk.  This would indicate that these algorithms are all extremely strong with correctly identifying low risk, but struggle with correctly identifying high risk.  
 *  BalancedRandomForestClassifier
     *  Balanced Accuracy Score:
     
@@ -92,4 +95,3 @@ Credit risk presents a significant problem for all portions of the financial ser
     This graphic shows that the EasyEnsembleClassifier algorithm produced a precision score of .07 and a recall score of .91 for high risk and a precision score of 1 and a recall score of .94 for low risk.
     
 ##  Summary of Results
-Reviewing the above alogirithms and associated results, it can be easily seen that the relative accuracy for 
